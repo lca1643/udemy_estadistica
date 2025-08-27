@@ -11,6 +11,45 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Función para ocultar elementos de Streamlit ---
+def hide_streamlit_elements():
+    """Función para ocultar elementos de Streamlit"""
+    hide_css = """
+    <style>
+    /* Ocultar el menú principal */
+    #MainMenu {visibility: hidden;}
+    
+    /* Ocultar el footer */
+    footer {visibility: hidden;}
+    
+    /* Ocultar el header */
+    header {visibility: hidden;}
+    
+    /* Ocultar los botones de acción (compartir, etc.) */
+    .stActionButton {display: none !important;}
+    
+    /* Ocultar la barra de herramientas */
+    [data-testid="stToolbar"] {display: none !important;}
+    
+    /* Ocultar elementos de decoración */
+    [data-testid="stDecoration"] {display: none !important;}
+    
+    /* Ocultar el widget de estado */
+    [data-testid="stStatusWidget"] {display: none !important;}
+    
+    /* Ocultar el botón "Deploy" si aparece */
+    [data-testid="stHeaderActionElements"] {display: none !important;}
+    
+    /* Método alternativo para versiones más recientes */
+    .st-emotion-cache-1wmy9hl {display: none !important;}
+    .st-emotion-cache-1hskohh {display: none !important;}
+    </style>
+    """
+    st.markdown(hide_css, unsafe_allow_html=True)
+
+# Aplicar la función para ocultar elementos
+hide_streamlit_elements()
+
 # --- CSS para personalización ---
 st.markdown(
     """
