@@ -111,7 +111,7 @@ st.markdown(
 st.markdown("""
 <div class="header-container">
     <h1 style='margin: 5px 0;'>Curso de Fundamentos de Estadística</h1>
-    <h2 style='margin: 5px 0;'>Udemy</h2>
+    <h2 style='margin: 5px 0;'>Udemy.com</h2>
     <p style='margin: 5px 0; font-size: 25px;'><strong>Luis Corona Alcantar</strong></p>
     <p style='margin: 5px 0; font-size: 20px;'>lca1643@gmail.com</p>
     <hr style='border: 2px solid rgba(255,255,255,0.3); margin: 20px 0;'>
